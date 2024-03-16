@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GitHub Account Switcher</title>
+</head>
+
+<body>
+    <div id="loader">
+        Loading...
+    </div>
+    <div id="welcome" style="display: none;">
+        <p>Welcome, add your git user details below as a one time setup process</p>
+        <div id="inputsContainer">
+            <input type="text" name="nickName" placeholder="nickName" />
+            <input type="text" name="userName" placeholder="userName" />
+            <input type="text" name="userEmail" placeholder="userEmail" />
+            <button id="addGitUser">Add</button>
+        </div>
+    </div>
+    <div id="accountChanger" style="display: none; justify-content: flex-start; align-items: center; gap: 10px;">
+        <p>Github Account</p><select id="gitAccountsSelect"></select>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+
+</html>
